@@ -1,6 +1,7 @@
 /* Importing Google font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap');
 
+ 
 /* Styling Mobile Version */
 
 * {
@@ -10,6 +11,17 @@
 body {
     font-family: "IBM Plex Sans", sans-serif;
 }
+
+/* Making the skip link hidden */
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
 
 /* Styling the button */
 button {
@@ -205,7 +217,7 @@ p {
 
 @media screen and (min-width:1080px) {
 
-
+/* Styling the nav bar */
     .header {
         display: flex;
         align-items: center;
@@ -213,7 +225,7 @@ p {
     }
 
     .nav {
-        flex-basis: 80%;
+        flex-basis: 70%;
     }
 
     .search-icon {
@@ -237,19 +249,35 @@ p {
         display: block;
         color: #000;
         text-align: center;
-        padding: 14px 16px;
+        padding: 14px 30px;
         text-decoration: none;
 
     }
+
+    /* Adding hover to the navbar */
 
     li a:hover {
         background-color: #000;
         color: white;
     }
 
+    /* Moving the logo to the top left */
     .logo {
         display: flex;
         justify-content: left;
+    }
+
+    .explore-section {
+        margin: 3rem;
+        text-align: center;
+    }
+
+    .explore-text {
+        padding-left: 5rem;
+    }
+
+    .comingsoon {
+        margin: 5rem;
     }
 
     .know-more {
@@ -269,6 +297,8 @@ p {
         gap: 1rem;
     }
 
+    /* Making the icons smaller */
+
     .social-icons img {
         max-width: 64px;
     }
@@ -277,6 +307,41 @@ p {
         line-height: 1.8;
     }
 
+    /* Styling the search bar */
+   
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+  }
+
+  /* Style the submit button */
+    form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #000;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;
+  }
+
+    form.example button:hover {
+        background: #0b7dda;
+  }
+
+  /* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
 
     /* See the magic of VR web */
     

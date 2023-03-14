@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital</title>
     <link rel="stylesheet" href="css/main.css">
+    <!-- Linking icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 <body>
     <!-- navbar -->
     <header class="header">
+        <a href="#main" class="skip">Skip to main content</a>
+        
         <a href="/index.html" class="logo">
                 <img src="images/logo-digital.png" alt="logo-digital" class="logo-image">
         </a>
@@ -18,13 +22,19 @@
         <!-- menu -->
         <nav class="nav">
             <ul class="menu">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About Us</a></li>
-                <li><a href="/contact.html">Contact Us</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/about.html">ABOUT US</a></li>
+                <li><a href="/contact.html">CONTACT US</a></li>
             </ul>
         </nav>
-<!-- search icon -->
+<!-- search bar -->
+        <div class="search">
+            <!-- The form -->
+            <form class="example" action="action_page.php">
+                 <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
 
     </header>
 
@@ -36,12 +46,12 @@
     </section>
     <section>
         <h1>EXPLORE VIRTUAL REALITY.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </section>
     
 
     <!-- Page content -->
-    <main>
+    <main class="main">
 <section class="explore-section">
     <picture>
         <source media="(max-width: 1080px)"
@@ -54,7 +64,7 @@
         >
     <img src="images/digital-products-mobile.jpg" alt="digital vr headset bundle">
     </picture>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+    <p class="explore-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
     <button>EXPLORE DIGITAL</button>
 </section>
 
