@@ -118,19 +118,18 @@ ul a:hover {
 
 .games-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     padding: 2rem;
 }
 
 .games-container img {
     max-width: 100%;
+    justify-content: space-between;
+
 }
 
-.comingsoon img {
-    width: 100%;
-    margin-bottom: 1rem;
-}
+
 
 .footer-menu {
     padding-left: 2.5rem;
@@ -138,6 +137,7 @@ ul a:hover {
 
 /* About Page */
 
+/* Setting the width for the images so it will fit the mobile screen */
 .about img {
     width: 100%;
 }
@@ -147,6 +147,10 @@ ul a:hover {
 }
 
 .blog img {
+    width: 100%;
+}
+
+.comingsoon img {
     width: 100%;
 }
 
@@ -267,22 +271,117 @@ p {
         justify-content: left;
     }
 
+    /* Adding margins to the explore section */
+
     .explore-section {
         margin: 3rem;
         text-align: center;
     }
+    /* Adding margins to the Explore section text */
 
     .explore-text {
-        padding-left: 5rem;
+        margin: 9rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
-    .comingsoon {
-        margin: 5rem;
+    /* Setting max width of the Explore image */
+
+    .explore-section img {
+        max-width: 75%;
+    }
+
+    /* Adding margins to the Coming Soon section */
+
+  
+
+    .comingsoon img {
+        margin-bottom: 1rem;
+    }
+
+
+    .comingsoon img {
+        max-width: 75%;
+    }
+
+    
+    /* Adding background color to the Know More section */
+
+    .know {
+        background-color: #cdcdcd;
     }
 
     .know-more {
         display: flex;
     }
+
+    /* Setting the max width of the Blog image */
+
+    .blog img {
+        max-width: 75%;
+    }
+
+    /* Adding margins to the paragraph in the Blog section */
+
+    .blog p {
+        margin: 9rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Adding margins to the Know More Paragraph and Aligning the text */
+
+    .know-more p {
+        margin: 2rem;
+        text-align: justify;
+    }
+
+    /* Adding margins to the About Section */
+
+    .about p {
+        margin: 9rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Setting the max width for the image in About section */
+
+    .about img {
+        max-width: 75%;
+    }
+
+    /* Setting the max width for the image in Games section */
+
+    .games-container img {
+        max-width: 75%;
+    }
+
+    /* Adding margins to the paragpraph in Games section */
+
+    .games p {
+        margin: 10rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        text-align: justify;
+
+    }
+
+    /* Adding background color to the Games section */
+
+    .games {
+        background-color: #cdcdcd;
+    }
+
+
+    /* Adding margins to the hero text */
+
+    .hero-text {
+        margin: 5rem;
+        margin-bottom: 0;
+    }
+
+
+    /* Styling the map so it fits the frame size */
 
     .map-container {
         display: flex;
@@ -332,7 +431,7 @@ p {
   }
 
     form.example button:hover {
-        background: #0b7dda;
+        background: #ba0606;
   }
 
   /* Clear floats */
@@ -341,6 +440,8 @@ form.example::after {
     clear: both;
     display: table;
   }
+
+
   
 
     /* See the magic of VR web */
